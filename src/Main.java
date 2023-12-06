@@ -9,7 +9,7 @@ public class Main {
     public static void main(String[] args) throws FileNotFoundException {
         //create new file reader and scanner
 
-        File file = new File("C:\\Users\\Soren\\Desktop\\AdventOfCode\\AdventOfCode\\src\\input.txt");
+        File file = new File("C:\\Users\\Soren\\Desktop\\AdventOfCode\\AdventOfCode\\src\\inputs\\input.txt");
         Scanner sc = new Scanner(file);
 
         //create arrayList
