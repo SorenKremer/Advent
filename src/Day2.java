@@ -6,12 +6,15 @@ import java.util.*;
 public class Day2 {
     public static void main(String[] args) throws FileNotFoundException {
         //create new file reader and scanner
+        int sum = 0;
+        try{
+
 
         File file = new File("C:\\Users\\Soren\\Desktop\\AdventOfCode\\AdventOfCode\\src\\inputs\\day2input.txt");
         Scanner sc = new Scanner(file);
 
 
-        int sum = 0;
+
         String line = "";
 
         Dictionary<String, Integer> lookup = new Hashtable<>();
@@ -42,6 +45,13 @@ public class Day2 {
             sum = sum + lookup.get(line);
         }
 
-        System.out.println(sum);
+
+        }
+        catch(FileNotFoundException e){
+            System.out.println("file not found");
+        }
+        finally {
+            System.out.println(sum);
+        }
     }
 }
