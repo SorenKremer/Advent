@@ -5,7 +5,7 @@ import java.util.Collections;
 import java.util.Scanner;
 
 
-public class Main {
+public class Day1 {
     public static void main(String[] args) throws FileNotFoundException {
         //create new file reader and scanner
 
