@@ -31,11 +31,18 @@ public class Day4 {
             min2 = Integer.parseInt(secondhalf[0]);
             max2 = Integer.parseInt(secondhalf[1]);
 
+            /*
+            //Part 1, fully overlap
 
             if (((min1 >= min2) && (max1 <= max2)) || (min1 <= min2) && (max1 >=max2)) {
                 sum++;
             }
+            */
+            //Part 2, any overlap
 
+            if(((min1 > max2) ||(min2 > max1)) == false){
+                sum++;
+            }
         }
         System.out.println(sum);
     }
